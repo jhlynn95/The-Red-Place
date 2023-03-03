@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Navigation from './Navigation';
 
 function Header() {
   return (
-    <div>Header</div>
+    <div>
+      <h1 className='header'>The Red Place</h1>
+      <Navigation />
+    </div>
   )
 }
 
