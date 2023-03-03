@@ -1,0 +1,15 @@
+.header {
+    font-size: 35px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.woodlogo {
+    width: 1850px;
+    height: 200px;
+}
+#header{
+    background-image: url("../imgs/close-up-of-horizontal-rough-dark-wood-board-texture.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
