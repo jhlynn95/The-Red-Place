@@ -11,6 +11,7 @@ function Navigation() {
         <Link to='/catering'> Catering </Link>
         <Link to='/contact'> Contact </Link>
         <Link to='/home'> Home </Link>
+        <Link to='/login'> Login </Link>
       </div>
     </div>
   )
