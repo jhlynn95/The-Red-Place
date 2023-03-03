@@ -1,5 +1,20 @@
 {
-  "dependencies": {
-    "package.js": "^1.1.3"
-  }
+  "name": "the-red-place",
+  "version": "1.0.0",
+  "description": "This is the best team in the world! We got this!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhlynn95/The-Red-Place.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhlynn95/The-Red-Place/issues"
+  },
+  "homepage": "https://github.com/jhlynn95/The-Red-Place#readme"
 }

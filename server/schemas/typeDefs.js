@@ -36,7 +36,7 @@ const typeDefs = gql`
         addAdmin(username: String!, email: String!, password: String!): Auth
         saveItem(input: savedItem!): User
         removeItem(itemId: String!): User
-        addedItem(input: ItemInput): Admin
+        addedItem(input: ItemInput): Item
     }
      `;
      
