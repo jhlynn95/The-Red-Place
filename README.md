@@ -12,8 +12,8 @@ This is the best team in the world! We got this!
 
 ## Credits
 
-https://github.com/aldoibuado
-https://github.com/jhlynn95
-https://github.com/turnerjeniah8
-https://github.com/DanielMartin971
+https://github.com/aldoibuado <br />
+https://github.com/jhlynn95 <br />
+https://github.com/turnerjeniah8 <br />
+https://github.com/DanielMartin971 <br />
 ## License
