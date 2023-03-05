@@ -12,6 +12,7 @@ function Navigation() {
         <Link to='/contact'> Contact </Link>
         <Link to='/home'> Home </Link>
         <Link to='/login'> Login </Link>
+        <Link to='/signup'> SignUp </Link>
       </div>
     </div>
   )
