@@ -6,11 +6,11 @@ function Navigation() {
   return (
     <div className='navbar'>
       <div className='links'>
-        <Link to='/'> About </Link>
+        <Link to='/'> Home </Link>
         <Link to='menu'> Menu </Link>
         <Link to='/catering'> Catering </Link>
         <Link to='/contact'> Contact </Link>
-        <Link to='/home'> Home </Link>
+        <Link to='/about'> About </Link>
         <Link to='/login'> Login </Link>
         <Link to='/signup'> SignUp </Link>
       </div>
