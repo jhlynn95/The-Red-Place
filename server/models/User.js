@@ -1,6 +1,5 @@
-const User = require('./User');
-
-module.exports = { User };const { Schema, model } = require('mongoose');
+let User = require('./User');
+const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
 
 const userSchema = new Schema(
@@ -40,6 +39,6 @@ userSchema.methods.isCorrectPassword = async function (password) {
 };
 
 
-const User = model('User', userSchema);
+ User = model('User', userSchema);
 
 module.exports = User;
