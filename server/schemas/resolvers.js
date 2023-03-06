@@ -38,8 +38,8 @@ const resolvers = {
             const token = signToken(admin);
       
             return { token, admin };
-          },
-          addedItem: async (parent, { input }, context) => {
+        },
+        addedItem: async (parent, { input }, context) => {
             if (context.item) {
                 const updatedItem = await item.findOneAndUpdate(
                     { _id: context.item._id },

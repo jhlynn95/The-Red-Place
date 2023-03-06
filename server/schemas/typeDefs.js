@@ -8,6 +8,7 @@ const typeDefs = gql`
         itemCount: Int
         savedItem: [Item]!
      }
+
      type Item {
         itemId: String
         authors: [String]
@@ -16,6 +17,7 @@ const typeDefs = gql`
         image: String
         link: String
     }
+
     input savedItem {
         itemId: String
         authors: [String]
@@ -24,13 +26,16 @@ const typeDefs = gql`
         image: String
         link: String
     }
+
     type Auth {
         token: ID!
         user: User
     }
+
     type Query {
         me: User
     }
+    
     type Mutation {
         login(email: String!, password: String!): Auth
         addAdmin(username: String!, email: String!, password: String!): Auth
