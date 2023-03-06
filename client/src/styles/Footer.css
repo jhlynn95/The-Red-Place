@@ -1,7 +1,7 @@
 .footer {
     width: 100%;
     height: 200px;
-    background: linear-gradient(to right, #ff0000 0%, #ff3399 100%);
+    /* background: linear-gradient(to right, #ff0000 0%, #ff3399 100%); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,14 +11,14 @@
   }
   
   .mediaLinks svg {
-    color: white;
+    color: whitesmoke;
     margin: 20px;
     font-size: 70px;
     cursor: pointer;
   }
   
   .footer p {
-    color: white;
+    color: whitesmoke;
     font-size: 30px;
   }
   
