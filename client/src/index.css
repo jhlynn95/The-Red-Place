@@ -70,6 +70,54 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'c_caesar_saladregular';
+    src: url('./fonts/CaesarSalad-8M6nD.otf') format('woff2'),
+         url('./fonts/CaesarSalad-8M6nD.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'c_cooking_beefregular';
+    src: url('./fonts/CookingBeef-vmJJM.otf') format('woff2'),
+         url('./fonts/CookingBeef-vmJJM.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fire_foxes_demoregular';
+    src: url('./fonts/FireFoxesDemo-4B6AW.ttf') format('woff2'),
+         url('./fonts/FireFoxesDemo-4B6AW.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'g_gadoregular';
+    src: url('./fonts/Gado-2OJ1l.otf') format('woff2'),
+         url('./fonts/Gado-2OJ1l.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'g_good_foodregular';
+    src: url('./fonts/GoodFood-X3nYZ.otf') format('woff2'),
+         url('./fonts/GoodFood-X3nYZ.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ji_burritoji_burrito';
+    src: url('./fonts/JiBurrito-R00M.ttf') format('woff2'),
+         url('./fonts/JiBurrito-R00M.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    background: linear-gradient(to right, #ff0000 0%, #ff3399 100%);
+    background-color: #F5372C;
 }

@@ -1,8 +1,8 @@
 .header {
-    font-family: 'el_mariachidemo';
+    font-family: 'c_caesar_saladregular';
     font-size: 50px;
     text-align: center;
-    color: red;
+    color: #F5372C;
 }
 
 .woodlogo {
@@ -12,8 +12,9 @@
 
 .redplace {
     height: 140px;
-    position: fixed;
+    position: absolute;
     right: 200px;
+    margin-top: 10px;
 }
 
 #header{
@@ -21,4 +22,5 @@
     background-repeat: no-repeat;
     background-size: 100%;
 }
+
 

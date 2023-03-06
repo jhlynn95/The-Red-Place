@@ -1,0 +1,24 @@
+.thered {
+    color: black;
+    text-align: center;
+}
+
+.foodimg {
+    height: 300px;
+    width: 300px;
+    float: left;
+}
+
+.drinkimg {
+    height: 350px;
+    width: 300px;
+    position: relative;
+    left: 800px;
+}
+
+.intro {
+    position: relative;
+    left: 20px;
+    font-size: 25px;
+    line-height: 1.5em;
+}
