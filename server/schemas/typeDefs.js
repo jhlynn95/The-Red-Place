@@ -27,6 +27,15 @@ const typeDefs = gql`
         link: String
     }
 
+    input ItemInput {
+        itemId: String
+        authors: [String]
+        description: String
+        title: String
+        image: String
+        link: String
+    }
+
     type Auth {
         token: ID!
         user: User
@@ -41,7 +50,7 @@ const typeDefs = gql`
         addAdmin(username: String!, email: String!, password: String!): Auth
         saveItem(input: savedItem!): User
         removeItem(itemId: String!): User
-        addedItem(input: ItemInput): Item
+        addedItem(input: ItemInput!): Item
     }
      `;
      

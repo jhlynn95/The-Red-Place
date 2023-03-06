@@ -13,6 +13,7 @@ const server = new ApolloServer({
     typeDefs,
     resolvers,
     context: authMiddleWare,
+    persistedQueries: false,
 });
 
 app.use(express.urlencoded({ extended: true }));
@@ -39,5 +40,5 @@ db.once("open", () => {
 })
 
 // start server
-startApolloServer(typeDefs, resolvesr);
+startApolloServer(typeDefs, resolvers);
 
