@@ -1,5 +1,4 @@
 import React from 'react'
-import "../styles/Contact.css";
 import { Typography, Card, CardContent, Grid, TextField, Button } from '@mui/material';
 
 function Catering() {
