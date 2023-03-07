@@ -30,7 +30,7 @@ function Contact() {
               <TextField label="Message" multiline rows={4} placeholder="Type Message Here" variant="outlined" fullWidth required />
             </Grid>
             <Grid xs={12} item>
-              <Button type="submit" variant="contained" color="primary" fullWidth> Button</Button>
+              <Button type="submit" variant="contained" color="primary" fullWidth> Submit </Button>
             </Grid>
           </Grid>
           </form>
