@@ -1,5 +1,6 @@
-import React from 'react'
-import "../styles/Contact.css";
+import React from 'react';
+import PlaceIcon from '@mui/icons-material/Place';
+import Winchester from '../imgs/Winchester.png';
 import { Typography, Card, CardContent, Grid, TextField, Button } from '@mui/material';
 
 function Contact() {
@@ -36,6 +37,12 @@ function Contact() {
           </form>
         </CardContent>
       </Card>
+
+      <h2 className='location'> Our Location and Business Hours </h2>
+      <p className='hours'> Saturdays: 8:00am till 3:00pm </p>
+      <p className='hours'> Sundays: 8:00am till 3:00pm </p>
+      <img className='winchester' src={Winchester} alt='location' />
+      <PlaceIcon className='placeIcon' onClick={event => window.location.href='https://goo.gl/maps/1jRJu99o8sjmXKUKA'} />
     </div>
   );
 }
