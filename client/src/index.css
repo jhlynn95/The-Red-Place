@@ -30,7 +30,7 @@
     font-style: normal;
 } */
 
-@font-face {
+/* @font-face {
     font-family: 'barrelhouse_all_capsregular';
     src: url('./fonts/Barrelhouse\ All\ Caps.ttf') format('woff2'),
          url('./fonts/Barrelhouse\ All\ Caps.ttf') format('woff');
@@ -68,7 +68,7 @@
          url('./fonts/ElMariachiIkiikocom-MVljp.otf') format('woff');
     font-weight: normal;
     font-style: normal;
-}
+} */
 
 @font-face {
     font-family: 'c_caesar_saladregular';
