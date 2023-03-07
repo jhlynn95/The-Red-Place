@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import PlaceIcon from '@mui/icons-material/Place';
+import Winchester from '../imgs/Winchester.png';
 import { Typography, Card, CardContent, Grid, TextField, Button } from '@mui/material';
 
 function Contact() {
@@ -35,30 +37,12 @@ function Contact() {
           </form>
         </CardContent>
       </Card>
-      <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-          <iframe
-            width="100%"
-            height="100%"
-            title="map"
-            className="absolute inset-0"
-            frameBorder={0}
-            marginHeight={0}
-            marginWidth={0}
-            style={{ filter: "opacity(0.7)" }}
-            src="https://www.google.com/maps/embed/v1/place?q=97+warren+st+new+york+city&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-          />
-          <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
-            <div className="lg:w-1/2 px-6">
-              <h2 className="title-font font-semibold text-white tracking-widest text-xs">
-                ADDRESS
-              </h2>
-              <p className="mt-1">
-                33280 Newport Rd, <br />
-                Winchester, CA 92596
-              </p>
-            </div>
-    </div>
-    </div>
+
+      <h2 className='location'> Our Location and Business Hours </h2>
+      <p className='hours'> Saturdays: 8:00am till 3:00pm </p>
+      <p className='hours'> Sundays: 8:00am till 3:00pm </p>
+      <img className='winchester' src={Winchester} alt='location' />
+      <PlaceIcon className='placeIcon' onClick={event => window.location.href='https://goo.gl/maps/1jRJu99o8sjmXKUKA'} />
     </div>
   );
 }
