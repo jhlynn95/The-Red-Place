@@ -52,13 +52,15 @@ function LoginForm() {
 
   return (
     <div className='loginform'>
+      <h1>Log In</h1>
       <form className="form">
+        
         <input
           value={email}
           name="email"
           onChange={handleInputChange}
           type="email"
-          placeholder="email"
+          placeholder="Email"
         />
         <input
           value={password}

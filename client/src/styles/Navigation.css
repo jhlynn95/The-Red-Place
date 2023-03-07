@@ -13,6 +13,11 @@
     justify-content: center;
     color: white;
   }
+
+  .navbar a:hover{
+    transition: 0.3s ease;
+    color: #F5372C;
+  }
   
   .navbar a {
     color: white;
