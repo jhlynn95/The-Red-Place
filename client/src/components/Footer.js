@@ -7,8 +7,8 @@ function Footer() {
   return (
     <div className='footer'>
       <div className='mediaLinks'>
-        <EmailIcon onClick={event => window.location.href='mailto:'} />
-        <InstagramIcon onClick={event => window.location.href='https://instagram.com/_theredplace_?igshid=YmMyMTA2M2Y='} />
+        <EmailIcon className='email' onClick={event => window.location.href='mailto:'} />
+        <InstagramIcon className='insta' onClick={event => window.location.href='https://instagram.com/_theredplace_?igshid=YmMyMTA2M2Y='} />
       </div>
       <p> &copy; 2023 All Rights Reserved</p>
     </div>

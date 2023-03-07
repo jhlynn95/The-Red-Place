@@ -9,6 +9,11 @@
     padding-top: 10px;
     margin-top: 200px;
   }
+
+.insta:hover, .email:hover{
+  transition: 0.5s ease;
+  color:black;
+}
   
   .mediaLinks svg {
     color: whitesmoke;

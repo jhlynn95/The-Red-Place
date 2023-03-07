@@ -56,20 +56,21 @@ function SignUpForm() {
 
   return (
     <div className='signup'>
+      <h1>Sign Up</h1>
       <form className="form">
         <input
           value={email}
           name="email"
           onChange={handleInputChange}
           type="email"
-          placeholder="email"
+          placeholder="Email"
         />
         <input
           value={userName}
           name="userName"
           onChange={handleInputChange}
           type="text"
-          placeholder="username"
+          placeholder="Username"
         />
         <input
           value={password}
