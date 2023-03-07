@@ -1,0 +1,27 @@
+.location {
+    text-align: center;
+}
+
+.hours {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.placeIcon {
+    position: relative;
+    bottom: 470px;
+    left: 890px;
+    cursor: pointer;
+    color: white;
+}
+
+.placeIcon:hover {
+    transition: 0.5s ease;
+    color: black;
+}
+
+.winchesterimg {
+    position: relative;
+    left: 28.5%;
+}
