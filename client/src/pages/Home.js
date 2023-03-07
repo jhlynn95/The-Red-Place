@@ -2,6 +2,7 @@ import React from 'react';
 import food from '../imgs/IMG_4012.jpg';
 import magnodrink from '../imgs/mango.JPG';
 import horchata from '../imgs/horchata.JPG';
+import fresa from '../imgs/fresa.JPG';
 import '../styles/Home.css';
 
 function Home() {
@@ -14,7 +15,8 @@ function Home() {
       Guadalajara style and more. You can find us at the Winchester SwapMeet every Saturday
       and Sunday from 8am till 3pm!</p>
       <img className='drinkimg' src={magnodrink} alt='mangodrink' />
-      <img className='drinkimg' src={horchata} alt='horchatadrink' />
+      <img className='drinkimg1' src={horchata} alt='horchatadrink' />
+      <img className='drinkimg2' src={fresa} alt='fresa' />
     </div>
   )
 }

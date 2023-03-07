@@ -16,9 +16,23 @@
     left: 800px;
 }
 
+.drinkimg1 {
+    height: 350px;
+    width: 300px;
+    position: relative;
+    left: 125px;
+}
+
+.drinkimg2 {
+    height: 350px;
+    width: 300px;
+    position: relative;
+    right: 555px;
+}
+
 .intro {
     position: relative;
     left: 20px;
-    font-size: 25px;
+    font-size: 24px;
     line-height: 1.5em;
 }

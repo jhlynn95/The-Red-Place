@@ -1,3 +1,41 @@
-.aboutus {
-    font-size: 30px;
+.aboutUs {
+    font-size: 35px;
+    text-align: center;
+}
+
+.melonimg {
+    height: 350px;
+    width: 300px;
+    float: left;
+    position: relative;
+    left: 60px;
+}
+
+.jamaicaimg {
+    height: 350px;
+    width: 300px;
+    float: right;
+    position: relative;
+    right: 60px;
+}
+
+.pepinoimg {
+    height: 350px;
+    width: 300px;
+    position: relative;
+    left: 120px;
+}
+
+.mangonada {
+    height: 350px;
+    width: 300px;
+    position: relative;
+    left: 180px;
+}
+
+.aboutInfo {
+    position: relative;
+    left: 20px;
+    font-size: 24px;
+    line-height: 1.5em;
 }
