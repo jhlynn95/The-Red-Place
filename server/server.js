@@ -17,7 +17,7 @@ const server = new ApolloServer({
 });
 
 app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+app.use(express.json()); 
 
 // If we are in production, server client/build as static assets
 if (process.env.NODE_ENV === "production") {
