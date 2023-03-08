@@ -1,5 +1,6 @@
 import React from 'react';
 import Items from '../components/Items';
+import logo from '../imgs/Menu.jpg';
 
 const menu = [
   {
@@ -84,10 +85,11 @@ const menu = [
   }
 ]
 
-
 function Menu() {
   return (
     <div>
+      {/* <h1 className='menu'> Menu </h1> */}
+      <img className='menuimg' src={logo} alt='menu list' />
       {menu.map(items => <Items title={items.title} description={items.description} />)} 
     </div>
   )
