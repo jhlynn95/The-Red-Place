@@ -51,19 +51,33 @@
 .items:nth-child(even) p {
     display: flex;
     margin-left: 100px;
+    margin-right: 20px;
     align-items: center;
     justify-content: center;
     background-color: white;
     border-radius: 1em;
+    box-shadow: 2px 5px 20px black;
 }
 
 .items:nth-child(odd) p {
     display: flex;
     margin-right: 100px;
+    margin-left: 20px;
     align-items: center;
     justify-content: center;
     background-color: white;
     border-radius: 1em;
+    box-shadow: -2px 5px 20px black;
+}
+
+.items:nth-child(even) .titles {
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.items:nth-child(odd) .titles {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 
