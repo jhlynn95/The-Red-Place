@@ -1,16 +1,16 @@
 import React from 'react';
-import PlaceIcon from '@mui/icons-material/Place';
+// import PlaceIcon from '@mui/icons-material/Place';
 import Winchester from '../imgs/Winchester.png';
-import { Typography, } from '@mui/material';
+// import { Typography, } from '@mui/material';
 import '../styles/Contact.css';
 import { ContactUs } from '../components/ContactUs';
 
 function Contact() {
   return (
     <div ClassName="App">
-      <Typography gutterButton varient="h1" align="center">
+      <h1 className='forms'>
         Fill out the form below
-      </Typography>
+      </h1>
       <ContactUs/>
       {/* <Card style= {{maxWidth: 450, margin: "0 auto", padding: "20px 5px"}}>
         <CardContent>
@@ -44,8 +44,8 @@ function Contact() {
       <h2 className='location'> Our Location and Business Hours </h2>
       <p className='hours'> Saturdays: 8:00am till 3:00pm </p>
       <p className='hours'> Sundays: 8:00am till 3:00pm </p>
-      <PlaceIcon className='placeIcon' onClick={event => window.location.href='https://goo.gl/maps/1jRJu99o8sjmXKUKA'} />
-      <img className='winchesterimg' src={Winchester} alt='location' />
+      {/* <PlaceIcon className='placeIcon' onClick={event => window.location.href='https://goo.gl/maps/1jRJu99o8sjmXKUKA'} /> */}
+      <a href='https://goo.gl/maps/1jRJu99o8sjmXKUKA'><img className='winchesterimg' src={Winchester} alt='location' /></a>
     </div>
   );
 }
