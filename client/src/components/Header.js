@@ -9,8 +9,10 @@ function Header() {
   return (
     <div id='header'>
       {/* <img className='woodlogo' src={woodlogo} alt='darkwood background' /> */}
-      <img className='redplace' src={redplace} alt='logo' />
+      <div className='header1'>
       <h1 className='header'>The Red Place</h1>
+      <img className='redplace' src={redplace} alt='logo' />
+      </div>
       <Navigation />
     </div>
   )

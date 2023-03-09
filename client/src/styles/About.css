@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     color: white;
-    width: 300px;
+    /* width: 300px; */
     padding: 10px 140px;
     text-align: center;
     font-family: 'c_caesar_saladregular';
@@ -13,31 +13,30 @@
 .melonimg {
     height: 350px;
     width: 300px;
-    float: left;
+    /* float: left;
     position: relative;
-    left: 60px;
+    left: 60px; */
 }
 
 .jamaicaimg {
     height: 350px;
     width: 300px;
-    float: right;
+    /* float: right;
     position: relative;
-    right: 60px;
+    right: 60px; */
 }
 
 .pepinoimg {
     height: 350px;
     width: 300px;
-    position: relative;
-    left: 120px;
+    /* position: relative;
+    left: 120px; */
 }
 
 .mangonada {
     height: 350px;
-    width: 300px;
-    position: relative;
-    left: 180px;
+    /* position: relative;
+    left: 180px; */
 }
 
 .aboutInfo {
@@ -45,4 +44,10 @@
     left: 20px;
     font-size: 24px;
     line-height: 1.5em;
+}
+
+.aboutimgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }

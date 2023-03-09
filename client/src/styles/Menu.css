@@ -5,7 +5,7 @@
 }
 
 .images {
-    width: 8%;
+    max-width: 100px;
     height: auto;
     border-radius: 50%;
 }
@@ -24,15 +24,16 @@
 
 .menu {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     color: white;
-    width: 300px;
+    /* width: 300px; */
     padding: 10px 140px;
     text-align: center;
     font-family: 'c_caesar_saladregular';
-    float:right;
+    /* float:right; */
     background-image: url("../imgs//wood\ background.png");
-    margin: 21.440px auto;
+    /* margin: 21.440px auto; */
 }
 
 .border {

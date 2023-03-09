@@ -3,6 +3,7 @@
     font-size: 50px;
     text-align: center;
     color: #F5372C;
+    display: inline-block;
 }
 
 .woodlogo {
@@ -12,9 +13,14 @@
 
 .redplace {
     height: 140px;
-    position: absolute;
+    display: inline-block;
     right: 200px;
     margin-top: 10px;
+}
+.header1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #header{
