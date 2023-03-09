@@ -3,6 +3,13 @@
     text-align: center;
     flex-direction: column;
 }
+
+.images {
+    width: 8%;
+    height: auto;
+    border-radius: 50%;
+}
+
 .titles {
     text-align: center;
     font-size: 25px;
