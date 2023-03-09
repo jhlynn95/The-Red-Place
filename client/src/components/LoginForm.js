@@ -52,7 +52,7 @@ function LoginForm() {
 
   return (
     <div className='loginform'>
-      <h1>Log In</h1>
+      <h1>Customer Log In</h1>
       <form className="form">
         
         <input
