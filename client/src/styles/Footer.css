@@ -10,7 +10,7 @@
     margin-top: 200px;
   }
 
-.insta:hover, .email:hover{
+.insta:hover, .phone:hover{
   transition: 0.5s ease;
   color:black;
 }
@@ -20,6 +20,14 @@
     margin: 20px;
     font-size: 70px;
     cursor: pointer;
+  }
+
+  .tiktok {
+    width: 70px;
+    cursor: pointer;
+    position: relative;
+    left: 15px;
+    bottom: 7px;
   }
   
   .footer p {
