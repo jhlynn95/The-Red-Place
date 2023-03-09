@@ -110,7 +110,7 @@ function Menu() {
   return (
     <div className='border'>
       <h1 className='menu'> Menu </h1>
-      {menu.map(items => <Items title={items.title} img={items.img} description={items.description} />)} 
+      {menu.map(items => <Items img={items.img} title={items.title} description={items.description} />)} 
     </div>
   )
 }

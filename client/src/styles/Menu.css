@@ -1,6 +1,5 @@
 .border{
     display: flex;
-    /* height: 1000px; */
     text-align: center;
     flex-direction: column;
 }
@@ -23,9 +22,16 @@
 }
 
 .menu {
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 300px;
+    padding: 10px 140px;
     text-align: center;
     font-family: 'c_caesar_saladregular';
     float:right;
+    background-image: url("../imgs//wood\ background.png");
+    margin: 21.440px auto;
 }
 
 .border {
@@ -34,14 +40,30 @@
 
 .items:nth-child(odd){
     display: flex;
-    color:white;
     float: right;
 }
 
 .items:nth-child(even){
     display: flex;
-    color:blue;
     flex-direction: row-reverse;
+}
+
+.items:nth-child(even) p {
+    display: flex;
+    margin-left: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 1em;
+}
+
+.items:nth-child(odd) p {
+    display: flex;
+    margin-right: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 1em;
 }
 
 

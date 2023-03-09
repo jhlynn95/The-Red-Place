@@ -1,6 +1,13 @@
 .aboutUs {
-    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 300px;
+    padding: 10px 140px;
     text-align: center;
+    font-family: 'c_caesar_saladregular';
+    background-image: url("../imgs//wood\ background.png");
+    margin: 21.440px auto;
 }
 
 .melonimg {
