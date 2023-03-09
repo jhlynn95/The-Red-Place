@@ -8,7 +8,7 @@
     font-weight: bold;
 }
 
-.placeIcon {
+/* .placeIcon {
     position: relative;
     bottom: 470px;
     left: 890px;
@@ -19,9 +19,41 @@
 .placeIcon:hover {
     transition: 0.5s ease;
     color: black;
-}
+} */
 
 .winchesterimg {
     position: relative;
-    left: 28.5%;
+    left: 31%;
+}
+
+.contactUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    flex-direction: column;
+}
+
+.contactUs input, textarea {
+    border-radius: 1em;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.forms {
+    text-align: center;
+    background-image: url("../imgs//wood\ background.png");
+    color: white;
+    padding: 10px 20px;
+    margin: 20px 560px;
+    font-style: italic;
+}
+
+.form1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    padding: 50px;
+    border: 2px solid black;
 }
