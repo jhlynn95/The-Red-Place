@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
 import '../styles/Login.css';
-
+import { LOGIN_USER } from '../utils/mutations';
 // Here we import a helper function that will check if the email is valid
 import { checkPassword, validateEmail } from '../utils/helpers';
-
+import { useMutation } from '@apollo/client';
+import Auth from "../utils/auth"
 function LoginForm() {
   // Create state variables for the fields in the form
   // We are also setting their initial values to an empty string
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
-
-  const handleInputChange = (e) => {
+ const [login] = useMutation(LOGIN_USER)
+   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
     const { target } = e;
     const inputType = target.name;
@@ -26,7 +27,7 @@ function LoginForm() {
     }
   };
 
-  const handleFormSubmit = (e) => {
+  const handleFormSubmit = async (e) => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
 
@@ -43,7 +44,14 @@ function LoginForm() {
       );
       return;
     }
-  
+    const { data }  = await login({
+      variables: {
+        email, password
+
+
+      }
+    })
+    Auth.login( data.login.token )
 
     // If everything goes according to plan, we want to clear out the input after a successful registration.
     setPassword('');

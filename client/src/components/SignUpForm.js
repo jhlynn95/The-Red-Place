@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import '../styles/SignUp.css';
-
-
+import { ADD_USER } from '../utils/mutations';
+import { useMutation } from '@apollo/client';
 // Here we import a helper function that will check if the email is valid
 import { checkPassword, validateEmail } from '../utils/helpers';
+import Auth from "../utils/auth"
 
 function SignUpForm() {
   // Create state variables for the fields in the form
@@ -12,6 +13,8 @@ function SignUpForm() {
   const [userName, setUserName] = useState('');
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+
+  const [signUp] = useMutation(ADD_USER)
 
   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
@@ -29,7 +32,7 @@ function SignUpForm() {
     }
   };
 
-  const handleFormSubmit = (e) => {
+  const handleFormSubmit = async(e) => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
 
@@ -46,7 +49,14 @@ function SignUpForm() {
       );
       return;
     }
-    alert(`Hello ${userName}`);
+    const { data }  = await signUp({
+      variables: {
+        email, password, username: userName
+
+
+      }
+    })
+    Auth.login( data.addUser.token )
 
     // If everything goes according to plan, we want to clear out the input after a successful registration.
     setUserName('');

@@ -1,16 +1,16 @@
 const { AuthenticationError } = require("apollo-server-express");
-const { Admin } = require("../models");
+const {  User } = require("../models");
 const { signToken } = require("../utils/auth");
 
 const resolvers = {
     Query: {
         me: async (parent, args, context) => {
             // check if admins exist
-            if (context.admin) {
-                const adminData = await Admin.findOne({ _id: context.admin._id }).select(
+            if (context.user) {
+                const userData = await User.findOne({ _id: context.user._id }).select(
                     "-__v -password"
                 );
-                return adminData;
+                return userData;
             }
             throw new AuthenticationError("Not logged in");
         },
@@ -18,26 +18,26 @@ const resolvers = {
 
     Mutation: {
         login: async (parent, { email, password }) => {
-            const admin = await Admin.findOne({ email });
+            const user = await User.findOne({ email });
             // check if admin exists with email and credentials
-            if (!admin) {
+            if (!user) {
                 throw new AuthenticationError("Incorrect credentials");
             }
-            const correctPassword = await admin.isCorrectPassword(password);
+            const correctPassword = await user.isCorrectPassword(password);
 
             // check password
             if (!correctPassword) {
                 throw new AuthenticationError("Incorrect credentials");
             }
 
-            const token = signToken(admin);
-            return { token, admin };            
+            const token = signToken(user);
+            return { token, user };            
         },
-        addAdmin: async (parent, args) => {
-            const admin = await Admin.create(args);
-            const token = signToken(admin);
+        addUser: async (parent, args) => {
+            const user = await User.create(args);
+            const token = signToken(user);
       
-            return { token, admin };
+            return { token, user };
         },
         addedItem: async (parent, { input }, context) => {
             if (context.item) {
