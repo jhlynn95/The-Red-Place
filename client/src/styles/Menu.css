@@ -1,25 +1,32 @@
 .titles {
-    font-size: 20px;
-    position: relative;
-    bottom: 900px;
-    left: 110px;
+    text-align: center;
+    font-size: 25px;
+    /* position: relative;
+    bottom: 1650px;
+    right: 330px; */
 }
 
 .description {
-    font-size: 13px;
-    position: relative;
-    bottom: 900px;
-    left: 30px;
+    text-align: center;
+    font-size: 20px;
+    /* position: relative;
+    bottom: 1650px;
+    right: 330px; */
 }
 
-/* .menu {
+.menu {
     text-align: center;
     font-family: 'c_caesar_saladregular';
+}
+
+.border {
+    border: 4mm ridge rgba(252, 78, 3, 0.6);
+}
+
+/* .menuimg {
+    height: 50%;
 } */
 
-.menuimg {
-    width: 1506px;
-}
 
 
 
