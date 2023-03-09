@@ -6,9 +6,6 @@
 .titles {
     text-align: center;
     font-size: 25px;
-    /* position: relative;
-    bottom: 1650px;
-    right: 330px; */
 }
 
 .description {
@@ -16,9 +13,6 @@
     font-size: 20px;
     width: 100%;
     border: 1px solid black;
-    /* position: relative;
-    bottom: 1650px;
-    right: 330px; */
 }
 
 .menu {
@@ -73,11 +67,17 @@
 .items:nth-child(even) .titles {
     border-left: 1px solid black;
     border-bottom: 1px solid black;
+    background: white;
+    border-radius: 0 0 0 1em;
+    box-shadow: 2px 5px 20px black;
 }
 
 .items:nth-child(odd) .titles {
     border-right: 1px solid black;
     border-bottom: 1px solid black;
+    background: white;
+    border-radius: 0 0 1em 0;
+    box-shadow: -2px 5px 20px black;
 }
 
 
