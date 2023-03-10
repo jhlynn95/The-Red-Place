@@ -27,7 +27,10 @@ In today's day and age, with technology ever increasing, the need for businesses
 The user will input npm install and then npm run develop in the root file.
 
 ## Usage
-We have attached the link  to our project in which you will be able to see what we have created. 
+Here is a screenshot of our website! 
+![Screenshot (61)](https://user-images.githubusercontent.com/109316738/224194599-5eabcc0c-c257-4d63-975a-4a7ad027ce49.png)
+
+We have attached the link https://the-red-place.herokuapp.com/ to our project in which you will be able to see what we have created. 
 
 ## License
 ![badge](https://img.shields.io/badge/license-MIT-brightgreen) <br/>
