@@ -3,9 +3,11 @@
     font-size: 35px;
     text-align: center;
     background-image: url("../imgs//wood\ background.png");
-    width: 500px;
+    /* width: 500px; */
     padding: 10px 140px;
-    margin-left: 35%;
+    /* margin-left: 35%; */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .foodimg {
